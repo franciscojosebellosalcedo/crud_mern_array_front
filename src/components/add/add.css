@@ -1,0 +1,25 @@
+.form{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 30%;
+}
+.input__form{
+    height: 40px;
+    border-radius: var(--border-radius);
+    font-size: 17px;
+    padding-left:10px ;
+}
+.buttons__form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn__form {
+  color: white;
+  font-size: var(--font-size-button);
+  padding: var(--padding-button);
+  margin-top: 40px;
+  border-radius: var(--border-radius);
+}
