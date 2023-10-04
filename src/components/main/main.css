@@ -20,9 +20,8 @@
     display: flex;
     margin-top: 40px;
     width: 70%;
-    height: 420px;
     overflow: auto;
-    max-height: 460px;
+    max-height: 480px;
     padding: 8px;
     display: grid;
     gap: 8px;
