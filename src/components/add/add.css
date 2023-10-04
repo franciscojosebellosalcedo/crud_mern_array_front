@@ -3,9 +3,16 @@
     gap: 20px;
     flex-direction: column;
     margin-top: 50px;
-    width: 30%;
+    width: 80%;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
 }
 .input__form{
+    width: 100%;
     height: 40px;
     border-radius: var(--border-radius);
     font-size: 17px;
@@ -22,4 +29,19 @@
   padding: var(--padding-button);
   margin-top: 40px;
   border-radius: var(--border-radius);
+}
+@media screen and (min-width:600px) {
+    .form{
+        width: 50%;
+    }
+}
+@media screen and (min-width:800px) {
+    .form{
+        width: 40%;
+    }
+}
+@media screen and (min-width:1000px) {
+    .form{
+        width: 30%;
+    }
 }

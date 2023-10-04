@@ -1,12 +1,12 @@
 .main{
     height: 100vh;
-   
     width: 100vw;
     background-color: var(--bg-color-app);
 }
+
 .main__title{
     padding-top: 50px;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .btn__add{
@@ -19,30 +19,62 @@
 .container__users{
     display: flex;
     margin-top: 40px;
-    flex-direction: column;
-    gap: 10px;
-    width: 60%;
+    width: 70%;
+    height: 420px;
     overflow: auto;
     max-height: 460px;
-    padding: 10px 0px;
-    border-radius: var(--border-radius);
+    padding: 8px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 240px;
+    margin-bottom: 40px;
 }
-.item{
-    display: flex;
-    align-items: center;
-    min-height: 90px;
-    width: 100%;
-    justify-content: space-evenly;
-    background-color: white;
-    border-radius: var(--border-radius);
+.grid__item{
+    background-color: rgba(255, 255, 255, 0.591);
+    box-shadow: 0px 0px 1px 0px black ;
+    border-radius: 8px;
+    position: relative;
+    padding: 8px;
 }
+.item__data > strong{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
 .item__data{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 12px;
 }
 .item__data> div{
     display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10px;
+    width:80%;
+    left: 50%;
+    transform: translateX(-50%);
     align-items: center;
-    gap: 10px;
+}
+.item__data> span{
+    max-width: 200px;
+    color: rgba(0, 0, 0, 0.768);
+}
+
+@media screen and (min-width:600px) {
+    .container__users{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width:900px) {
+    .container__users{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width:1200px) {
+    .container__users{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
